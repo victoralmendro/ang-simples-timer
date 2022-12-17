@@ -1,0 +1,17 @@
+<div class="container-timer">
+    <app-timer-editor [isShowing]="false" 
+        (onToggle)="onToggleEditor($event)"
+        (onSave)="onTimerSaved($event)"></app-timer-editor>
+
+    <div *ngIf="isTimeShowing" style="text-align: center;">
+        <span aria-label="current time" class="time-teller"
+            (click)="enableTimerEditor()">
+            {{currentHour}}:{{currentMinute}}:{{currentSecond}}
+        </span>
+        <div class="btn-group">
+            <button type="button">START</button>
+            <button type="button">STOP</button>
+            <button type="button">PAUSE</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+.container-timer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.time-teller{
+    margin-bottom: .5em;
+}
+
+.btn-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+}

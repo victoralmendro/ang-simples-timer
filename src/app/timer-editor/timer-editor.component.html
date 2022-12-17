@@ -1,0 +1,16 @@
+<div [hidden]="!isShowing">
+    <form>
+        <div class="form-group">
+            <input type="text" class="input--time" [ngClass]="this.isHoursValid ? '' : 'input--error'" 
+                name="hours" maxlength="2"
+                [(ngModel)]="hours" #inpHours/>
+            <input type="text" id="inpMinutes" class="input--time" 
+                name="minutes" maxlength="2" [ngClass]="this.isMinutesValid ? '' : 'input--error'"
+                [(ngModel)]="minutes"/>
+            <input type="text" id="inpSeconds" class="input--time"
+                name="seconds" maxlength="2" [ngClass]="this.isSecondsValid ? '' : 'input--error'"
+                [(ngModel)]="seconds"/>
+        </div>
+    </form>
+    <button type="button" (click)="save()">Save</button>
+</div>

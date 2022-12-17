@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+@import url(normalize.css);
+
+:root{
+    --primary-color: #121212;
+    --primary-light-color: #282A3A;
+    --secondary-color: #C69749;
+    --secondary-dark-color: #735F32;
+    --text-color: #e7e7e7;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    cursor: pointer;
+}
